@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+						<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+						<title>Hello, World!</title>
+						<link rel="stylesheet" href="style.css">
+</head>
+<body>
+						
+						<div class="resultDiv">
+												<div id="result"></div>
+												<p class="blinking">|</p>
+						</div>
+						
+						<div class="buttonDiv">
+												<div>
+																		<button class="btn btn1" onclick="removeAll()">C</button>
+																		<button class="btn btn2" onclick="appendToResult('%')">%</button>
+																		<button class="btn btn2" onclick="erase()">⌫</button>
+																		<button class="btn btn2" onclick="appendToResult('÷')">÷</button>
+												</div>
+												<div>
+																		<button class="btn" onclick="appendToResult('7')">7</button>
+																		<button class="btn" onclick="appendToResult('8')">8</button>
+																		<button class="btn" onclick="appendToResult('9')">9</button>
+																		<button class="btn btn2" onclick="appendToResult('×')">×</button>
+												</div>
+												<div>
+																		<button class="btn" onclick="appendToResult('4')">4</button>
+																		<button class="btn" onclick="appendToResult('5')">5</button>
+																		<button class="btn" onclick="appendToResult('6')">6</button>
+																		<button class="btn btn2" onclick="appendToResult('-')">–</button>
+												</div>
+												<div>
+																		<button class="btn" onclick="appendToResult('1')">1</button>
+																		<button class="btn" onclick="appendToResult('2')">2</button>
+																		<button class="btn" onclick="appendToResult('3')">3</button>
+																		<button class="btn btn2" onclick="appendToResult('+')">+</button>
+												</div>
+												<div>
+																		<button class="btn" id="curlyButtonCalculatorHidden" onclick="markMe">?</button>
+																		<button class="btn" onclick="appendToResult('0')">0</button>
+																		<button class="btn" onclick="appendToResult('.')">.</button>
+																		<button class="btn3" id="equalFakeCalculator" onclick="equal()">=</button>
+												</div>
+						</div>
+						
+						<div class="info" id="info">
+												<p></p>
+												<input id="inputInputCalculator" class="input" placeholder="Enter something">
+												<div>
+																		<button id="fakeButton-Reset">Reset</button>
+																		<button id="fakeButton-Send">Send</button>
+												</div>
+						</div>
+						
+						<script src="script.js"></script>
+</body>
+</html>
